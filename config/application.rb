@@ -26,5 +26,11 @@ module Pdvend
     # Middleware like session, flash, cookies can be added back manually.
     # Skip views, helpers and assets when generating a new resource.
     config.api_only = true
+
+    # Autoload lib/ files
+    config.autoload_paths << "#{Rails.root}/lib"
+
+    # Disable strong parameters
+    config.action_controller.permit_all_parameters = true
   end
 end

@@ -17,5 +17,3 @@ class Scraper
   end
 
 end
-
-pp Scraper.new.parse('https://www.pdvend.com.br/')

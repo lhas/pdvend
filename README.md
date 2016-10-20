@@ -10,18 +10,24 @@ Para rodá-la, você vai precisar de:
 
 Para iniciar a aplicação, basta rodar `rails s`
 
-Crie uma aplicação em Rails que indexe páginas da Web, por indexar, você deve entender ler o conteúdo da página, identificar e salvar o conteúdo das tags h1, h2 e h3 presentes na página.
+# Endpoints
 
-Você tem liberdade para mostrar suas habilidades, mas esses requerimentos devem ser atendidos:
-- Escreva a aplicação utilizando Ruby on Rails
-- A aplicação deve ter ao menos dois endpoints: um que recebe uma URL para indexar e outro que recupera os dados já indexados.
-- Seu projeto deve conter um readme
+## Links
+Esta aplicação gira em torno de apenas 1 camada, denominada `Links`.
 
-Para os endpoints:
-- A API deve armazenar somente as URLs e o conteúdo das tags. Não é necessário armazenar o html das páginas indexadas.
+Ela está modalda sob a arquitetura RESTful, apesar deste endpoint ter somente `create` e `show`.
 
-O que avaliaremos:
-- Software design
-- Design da API e adequação ao REST
-- Testes
-- Performance e escalabilidade do código
+### Cadastrar Link
+Para você cadastrar um novo link, acesse: `http://localhost:3000/links?link[url]=http://link.aqui/`
+
+Após cadastrar, você será redirecionado para a visualização do link, onde terá um JSON com `h1`, `h2` e `h3`.
+
+## Visualizar Link
+Para você visualizar um link existente, acesse: `http://localhost:3000/links/<id>`
+
+# Funcionamento
+Foi feito uma classe para efetuar o scraper denominada `Scraper` (dãã) dentro de `lib/`.
+
+Esta classe trabalha com uma gem chamada `Wombat`.
+
+Através do `Wombat` podemos consultar o HTML de qualquer página na Web, através de `XPath` ou `seletores CSS`.
