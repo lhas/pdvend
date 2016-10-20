@@ -26,6 +26,7 @@ Após cadastrar, você será redirecionado para a visualização do link, onde t
 Para você visualizar um link existente, acesse: `http://localhost:3000/links/<id>`
 
 # Funcionamento
+<img src="http://imgur.com/j8vBXIhl.png" />
 Foi feito uma classe para efetuar o scraper denominada `Scraper` (dãã) dentro de `lib/`.
 
 Esta classe trabalha com uma gem chamada `Wombat`.
