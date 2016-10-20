@@ -1,5 +1,15 @@
 # PDVend
 
+Esta é uma típica aplicação em Rails.
+
+Para rodá-la, você vai precisar de:
+
+- Ruby 2
+- Rails 5
+- PostgreSQL
+
+Para iniciar a aplicação, basta rodar `rails s`
+
 Crie uma aplicação em Rails que indexe páginas da Web, por indexar, você deve entender ler o conteúdo da página, identificar e salvar o conteúdo das tags h1, h2 e h3 presentes na página.
 
 Você tem liberdade para mostrar suas habilidades, mas esses requerimentos devem ser atendidos:
