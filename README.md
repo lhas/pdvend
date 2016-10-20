@@ -6,7 +6,7 @@ Para rodá-la, você vai precisar de:
 
 - Ruby 2
 - Rails 5
-- PostgreSQL
+- SQLite
 
 Para iniciar a aplicação, basta rodar `rails s`
 
