@@ -26,7 +26,7 @@ Após cadastrar, você será redirecionado para a visualização do link, onde t
 Para você visualizar um link existente, acesse: `http://localhost:3000/links/<id>`
 
 # Funcionamento
-<img src="http://imgur.com/j8vBXIhl.png" style="width: 100%;" />
+<img src="https://s16.postimg.org/npj1neghh/Captura_de_tela_2016_10_20_11_59_11.png" style="width: 100%;" />
 
 Foi feito uma classe para efetuar o scraper denominada `Scraper` (dãã) dentro de `lib/`.
 
